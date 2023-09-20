@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Challenge</title>
+</head>
+<body>
+
+<h1>Introduzca sus datos:</h1>
+
+    <form action="enviarDatosAlEndpoint" method="post" id="userForm">
+        <div>
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" name="userName" placeholder="Ingrese aquí su nombre" />
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Apellido: </label>
+            <input type="text" id="lastName" name="userLastName" placeholder="Ingrese aquí su apellido" />
+        </div>
+        <br>
+        <div>
+            <label for="birthDate">Fecha de Nacimiento: </label>
+            <input type="date" id="birthDate" name="birthDateUser" min="1920-01-01" max="2018-12-31">
+        </div>
+        <br>
+        <button id="buttonSubmit" type="submit">Enviar datos</button>
+    </form>
+<script src="datos.js"></script>
+</body>
+</html>
